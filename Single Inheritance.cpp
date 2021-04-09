@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class parent{
+class parent{   //create parent class;
     public:
 
 string brand;
@@ -12,7 +12,7 @@ cout<<"This is:"<<endl;
 }
 };
 
-class child:public parent {
+class child:public parent {   //inheritances parent class by chil class;
     public:
 
 int price;
@@ -25,9 +25,16 @@ int price;
 int main(){
 
 
-child car;
-car.brand="RRR";
-car.price=5000000;
+child car; //create an object;
+
+car.brand;
+car.price;
+
+cout<<"Enter car brand:"<<endl;
+cin>>car.brand;
+cout<<"Enter car price:"<<endl;
+cin>>car.price;
+
 car.print();
 cout<<"Brand: "<<car.brand<<endl<<"Price: "<<car.price<<endl;
 
