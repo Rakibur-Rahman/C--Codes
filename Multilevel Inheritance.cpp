@@ -8,6 +8,7 @@ public:
     float height;
 
 
+
 };
 class father:public grandfather{
 public:
@@ -26,6 +27,10 @@ public:
 
     int amount;
 
+    void add(){
+    cout<<"Enter your address: "<<endl;
+    }
+
 
 };
 
@@ -34,15 +39,18 @@ int main()
 {
     child son;
 
-    son.color="Black";
-    son.height=5.6;
-    son.hair_color="brown";
-    son.name="Rakibur";
-    son.amount=50000;
+
+    son.add();
+    getline(cin,son.address);
+    getline(cin,son.color);
+    getline(cin,son.hair_color);
+    getline(cin,son.name);
 
 
 
-    cout<<son.color<<endl<<son.height<<endl<<son.hair_color<<endl<<son.name<<endl<<son.amount<<endl;
+    cout<<son.address<<endl<<son.color<<endl<<son.hair_color<<endl<<son.name<<endl;
+
+
 
     return 0;
 
